@@ -85,13 +85,23 @@
 
 
 
-def count_letters(word):
-    count = {}
-    for letter in word:
-        count[letter] = count.get(letter, 0) + 1
-    for key, value in count.items():
-        print(key, value)
-word = 'краска'
-count_letters(word)
+# def count_letters(word):
+#     count = {}
+#     for letter in word:
+#         count[letter] = count.get(letter, 0) + 1
+#     for key, value in count.items():
+#         print(key, value)
+# word = 'краска'
+# count_letters(word)
 
 
+# https://github.com/Sokolinen/reva.git
+
+# [::-1]
+
+
+word = input('Введите слово ')
+if word == word[::-1]:
+     print(True)
+else:
+     print(False)
